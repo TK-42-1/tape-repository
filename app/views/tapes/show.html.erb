@@ -1,0 +1,15 @@
+<h1>
+	<%= @tape.description %>
+</h1>
+<h3>
+	Tape Number:
+	<%= @tape.number %>
+</h3>
+<h3>
+	<b>Code:</b><br />
+	<%= link_to image_tag(@code), asset_path(@code) %>
+</h3>
+
+<%= link_to 'Edit', edit_tape_path(@tape) %> |
+<%= link_to 'Delete', @tape, confirm: 'Are you sure?', method: :delete %> | 
+<%= link_to 'Back', tapes_path %>

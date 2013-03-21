@@ -1,0 +1,288 @@
+Connecting to database specified by database.yml
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:11:21 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 57ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:11:22 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:08 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:10 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:13 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:16 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Connecting to database specified by database.yml
+Migrating to CreateTapes (20130318211319)
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:48 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:49 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:50 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:50 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:51 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:51 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:51 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:52 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:52 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:13:52 -0500
+Processing by TapesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tapes'):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:17:09 -0500
+Processing by TapesController#index as HTML
+  Rendered tapes/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title><%= title %></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4555486225517214795_24867420'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:17:14 -0500
+Processing by TapesController#index as HTML
+  Rendered tapes/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title><%= title %></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4555486225517214795_24867420'
+
+
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:17:15 -0500
+Processing by TapesController#index as HTML
+  Rendered tapes/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title><%= title %></title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4555486225517214795_24867420'
+
+
+Compiled jquery.js  (1ms)  (pid 30423)
+Compiled jquery_ujs.js  (0ms)  (pid 30423)
+Compiled tapes.js  (440ms)  (pid 30423)
+Compiled application.js  (474ms)  (pid 30423)
+Compiled custom.css  (1536ms)  (pid 30423)
+Compiled tapes.css  (1ms)  (pid 30423)
+Compiled application.css  (1590ms)  (pid 30423)
+Compiled jquery.js  (1ms)  (pid 30423)
+Compiled jquery_ujs.js  (0ms)  (pid 30423)
+Compiled tapes.js  (145ms)  (pid 30423)
+Compiled application.js  (179ms)  (pid 30423)
+Compiled custom.css  (1561ms)  (pid 30423)
+Compiled tapes.css  (1ms)  (pid 30423)
+Compiled application.css  (1605ms)  (pid 30423)
+Connecting to database specified by database.yml
+Started GET "/" for 10.1.0.48 at 2013-03-20 17:18:54 -0500
+Processing by TapesController#index as HTML
+  Rendered tapes/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 89ms (Views: 37.4ms | ActiveRecord: 2.2ms)
+Started GET "/assets/application-0942783d3c40b449bfa6dcceb173d05c.css" for 10.1.0.48 at 2013-03-20 17:18:55 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/application-0942783d3c40b449bfa6dcceb173d05c.css"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Started GET "/assets/application-d49bb74531bf5f613b7fb5fc5c48d8b6.js" for 10.1.0.48 at 2013-03-20 17:18:55 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/application-d49bb74531bf5f613b7fb5fc5c48d8b6.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Started GET "/assets/logo-fc0bd016ad01f870b878ec2fb50f5089.png" for 10.1.0.48 at 2013-03-20 17:18:55 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo-fc0bd016ad01f870b878ec2fb50f5089.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/a_turner/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
