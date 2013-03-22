@@ -12,6 +12,7 @@ class TapesController < ApplicationController
     @tape = Tape.find(params[:id])   
     @title = "#{@tape.number} #{@tape.description}"
     @code = "tapes/#{@tape.number}.png"
+    @googlecode = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=http://10.2.2.150:3000/tapes/#{@tape.number}"
   end
   
   def edit

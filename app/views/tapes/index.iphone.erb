@@ -1,0 +1,5 @@
+<h3>
+<% @tapes.each do |tape| %>
+	<%= link_to "#{tape.number} #{tape.description}" , tape %><br />
+<% end %>
+</h3>
