@@ -11,8 +11,8 @@ class TapesController < ApplicationController
   def show
     @tape = Tape.find(params[:id])   
     @title = "#{@tape.number} #{@tape.description}"
-    @code = "tapes/#{@tape.number}.png"
-    @googlecode = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=http://10.2.2.150:3000/tapes/#{@tape.number}"
+    @code = "https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
+    @printcode = "https://chart.googleapis.com/chart?chs=80x80&chld=L|1&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
   end
   
   def edit
@@ -27,6 +27,13 @@ class TapesController < ApplicationController
     else
       render 'new'
     end
+  end
+  
+  def print
+    @tape = Tape.find(params[:id])
+    @title = "Print Label | Tape #{@tape.number}"
+    @code = "https://chart.googleapis.com/chart?chs=80x80&chld=L|0&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
+    @print = true
   end
   
   def update

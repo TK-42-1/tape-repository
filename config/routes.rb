@@ -1,6 +1,11 @@
 TapeRepository::Application.routes.draw do
   root to: 'tapes#index'
-  resources :tapes
+  resources :tapes do
+    member do
+      get 'print'
+    end
+  end
+
   
   
 

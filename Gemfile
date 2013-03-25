@@ -5,6 +5,8 @@ gem 'execjs'
 gem 'bootstrap-sass', '2.1'
 gem 'capistrano'
 gem 'rvm-capistrano'
+gem 'simple_form'
+gem 'paper_trail'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

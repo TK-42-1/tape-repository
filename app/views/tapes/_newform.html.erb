@@ -1,0 +1,20 @@
+<%= simple_form_for(@tape, :html => { :class => 'form-horizontal text-center'}) do |f| %>
+  <% if @tape.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tape.errors.count, "error") %> prohibited this tape from being saved:</h2>
+
+      <ul>
+      <% @tape.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :number, label: 'Number' %>
+  <%= f.input :description, label: 'Description' %>
+	<div class='btn-group'>
+  <%= f.button :submit, class: 'btn-success'  %>
+<%= link_to 'Cancel', tapes_path, class: "btn btn-danger" %>
+</div>
+<% end %>			

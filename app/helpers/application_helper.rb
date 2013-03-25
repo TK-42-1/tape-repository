@@ -13,6 +13,6 @@ module ApplicationHelper
     end
     
     def code
-      code = image_tag("#{@tape.number}.png")
+      code = image_tag("https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}")
     end
 end
