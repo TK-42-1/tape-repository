@@ -1,11 +1,19 @@
-<%= form_for(@tape) do |f| %>
-<div class="span4">
-  <div class="row">
-    <%= f.label 'Description' %>
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>			
+<div id="index-btn">
+<%= simple_form_for(@tape, :html => { :class => 'form'}) do |f| %>
+  <% if @tape.errors.any? %>
+    <div class="alert alert-error">
+      <strong><%= pluralize(@tape.errors.count, "error") %> prohibited this tape from being saved:</strong>
+      <ul>
+      <% @tape.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :description, label: 'Description' %>
+	<div class='btn-group'>
+  	<%= f.button :submit, 'Update', class: 'btn-mini btn-success'  %>
+  	</div>
+<% end %>
 </div>

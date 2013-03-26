@@ -3,5 +3,6 @@
 </h1>
 
 <%= render 'form' %>
+<%= link_to 'Undo', revert_version_path(@tape.versions.last), :method => :post, class: "btn btn-danger" %>
 
 <%= image_tag @googlecode %>
