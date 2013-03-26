@@ -32,5 +32,5 @@ group :test do
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql'
 end
