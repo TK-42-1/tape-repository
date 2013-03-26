@@ -1,6 +1,8 @@
+<h2>Label Print</h2>
 <div id="print-list">
 	<ul>
-		<li><div id="print-box"><%= image_tag(@code) %><%= @tape.number %></div></li><br /><br />
-		<li><%= link_to 'Back', tape_path, class: "btn btn-inverse" %> </li>
+		<li><div id="print-box"><%= image_tag(@code) %> <%= @tape.number %></div></li><br /><br />
+		<li><div class="btn-group"><%= link_to 'Back', tape_path, class: "btn btn-inverse" %> 
+		<%= link_to_function "Print", "javascript:print()", class: "btn btn-success" %></li></div>
 	</ul>
 </div>

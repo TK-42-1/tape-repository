@@ -1,7 +1,13 @@
 <h2>Full Tape Inventory</h2>
 
-<div id="index">
-<% @tapes.each do |tape| %>
-<%= link_to "#{tape.number} | #{tape.description}", tape %> || <%= link_to 'Edit', edit_tape_path(tape) %><br />
-<% end %>
-<h4><%= link_to 'Create New Tape', new_tape_path %></h4>
+<div id="index-list">
+	<% @tapes.each do |tape| %>
+	  <%= link_to "#{tape.number}", tape, class: "label" %> 
+		<%= link_to "#{tape.description}", tape %><br />
+	<% end %><br />
+</div>
+<div id="index-btn">
+	<%= link_to 'Create Tape', new_tape_path, class: "btn btn-success" %>	
+</div>
+
+

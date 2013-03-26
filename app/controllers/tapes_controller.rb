@@ -23,7 +23,7 @@ class TapesController < ApplicationController
   def create
     @tape = Tape.new(params[:tape])
     if @tape.save
-      redirect_to @tape, :flash => {:success => "New tape record created" }
+      redirect_to @tape
     else
       render 'new'
     end
@@ -32,7 +32,7 @@ class TapesController < ApplicationController
   def print
     @tape = Tape.find(params[:id])
     @title = "Print Label | Tape #{@tape.number}"
-    @code = "https://chart.googleapis.com/chart?chs=80x80&chld=L|0&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
+    @code = "https://chart.googleapis.com/chart?chs=60x60&chld=L|0&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
     @print = true
   end
   
@@ -41,7 +41,7 @@ class TapesController < ApplicationController
     if @tape.update_attributes(params[:tape])
       redirect_to @tape
     else
-      redirect_to @tape, :flash => {:failure => "Unable to save edit" }
+      render 'edit'
     end
   end
   
