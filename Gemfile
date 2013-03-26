@@ -32,5 +32,5 @@ group :test do
 end
 
 group :production do
-  gem 'sqlite3', '1.3.5'
+  gem 'mysql2'
 end
