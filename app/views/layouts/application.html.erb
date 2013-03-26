@@ -8,6 +8,13 @@
 </head>
 <body>
 <%= render 'layouts/header' unless @print %>
+<% if flash[:notice] and flash[:notice] != "nil" %>
+  <%- flash.each do |name ,msg| -%>
+		<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+		<%= content_tag :div, raw(msg), :id => "flash_#{name}" %>
+	<%- end -%>
+	</div>
+<% end %>
 <%= yield %>
 
 </body>

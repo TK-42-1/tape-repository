@@ -1,4 +1,5 @@
 TapeRepository::Application.routes.draw do
+  post "versions/:id/revert" => "versions#revert", as: "revert_version"
   root to: 'tapes#index'
   resources :tapes do
     member do

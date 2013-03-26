@@ -39,7 +39,11 @@ class TapesController < ApplicationController
   def update
     @tape = Tape.find(params[:id])
     if @tape.update_attributes(params[:tape])
+      flash.now[:notice] = "Updated tape."
+      flash.keep
       redirect_to @tape
+      
+      
     else
       render 'edit'
     end
@@ -49,5 +53,10 @@ class TapesController < ApplicationController
     @tape = Tape.find(params[:id])
     @tape.destroy
     redirect_to root_path
+  end
+  
+  private
+  def undo_link
+    undo_link = view_context.link_to("undo", revert_version_path(@tape.versions.last), :method => :post)
   end
 end
