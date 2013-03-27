@@ -33,4 +33,5 @@ end
 
 group :production do
   gem 'mysql'
+  gem 'activerecord-mysql-adapter'
 end
