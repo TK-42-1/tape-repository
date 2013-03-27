@@ -19,8 +19,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: mysql2
+  encoding: utf-8
   database: production
+  pool: 5
   username: deployer
   password: t3tc0
   host: 10.2.2.150
