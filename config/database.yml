@@ -7,9 +7,9 @@ development:
     adapter: mysql2
     encoding: utf8
     database: tapes_development
-    username: root
-    password: teekay
-    socket: /var/run/mysqld/mysqld.sock
+    username: deployer
+    password: t3tc0
+    host: localhost
 
 
 # Warning: The database defined as "test" will be erased and
@@ -19,15 +19,15 @@ test:
     adapter: mysql2
     encoding: utf8
     database: tapes_test
-    username: root
-    password: teekay
-    socket: /var/run/mysqld/mysqld.sock
+    username: deployer
+    password: t3tc0
+    host: localhost
 
 
 production:
     adapter: mysql2
     encoding: utf8
     database: tapes_production
-    username: root
-    password: teekay
-    socket: /var/run/mysqld/mysqld.sock
+    username: deployer
+    password: t3tco
+    host: localhost

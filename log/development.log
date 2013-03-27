@@ -35144,3 +35144,50 @@ Processing by TapesController#index as HTML
   Rendered tapes/index.html.erb within layouts/application (7.6ms)
   Rendered layouts/_header.html.erb (0.8ms)
 Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 2.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/tapes" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (3.1ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number asc
+  Rendered tapes/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 91ms (Views: 70.8ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /versions.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /tapes.css - 200 OK (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-03-27 13:53:33 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-03-27 13:53:36 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
