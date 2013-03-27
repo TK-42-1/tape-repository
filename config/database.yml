@@ -9,7 +9,7 @@ development:
     database: tapes_development
     username: deployer
     password: t3tc0
-    host: localhost
+    host: 10.2.2.150
 
 
 # Warning: The database defined as "test" will be erased and
@@ -21,7 +21,7 @@ test:
     database: tapes_test
     username: deployer
     password: t3tc0
-    host: localhost
+    host: 10.2.2.150
 
 
 production:
@@ -30,4 +30,4 @@ production:
     database: tapes_production
     username: deployer
     password: t3tc0
-    host: localhost
+    host: 10.2.2.150
