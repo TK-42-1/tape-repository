@@ -1,6 +1,6 @@
 class TapesController < ApplicationController
   def index
-    @tapes = Tape.find(:all, order: "number asc")
+    @tapes = Tape.find(:all, order: "number")
   end
 
   def new
