@@ -35229,3 +35229,5 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
 Served asset /versions.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

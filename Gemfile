@@ -32,12 +32,10 @@ gem 'jquery-rails', '2.0.2'
 group :test do
   gem 'capybara', '1.1.2'
   gem 'mysql2'
-  gem 'activerecord-mysql-adapter'
   gem 'activerecord-mysql2-adapter'
 end
 
 group :production do
   gem 'mysql2'
-  gem 'activerecord-mysql-adapter'
   gem 'activerecord-mysql2-adapter'
 end
