@@ -20,7 +20,6 @@ test:
 
 production:
   adapter: mysql2
-  encoding: utf-8
   database: production
   pool: 5
   username: deployer
