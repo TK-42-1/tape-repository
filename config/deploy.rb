@@ -35,7 +35,7 @@ after "deploy:restart", "deploy:cleanup"
  
 namespace :deploy do
 
-take :cold do
+task :cold do
   update
   load_schema
   start
