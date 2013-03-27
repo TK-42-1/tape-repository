@@ -35191,3 +35191,41 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (3.9ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number asc[0m
+  Rendered tapes/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 67.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /tapes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-03-27 14:48:40 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
