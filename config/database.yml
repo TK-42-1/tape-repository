@@ -29,5 +29,5 @@ production:
     encoding: utf8
     database: tapes_production
     username: deployer
-    password: t3tco
+    password: t3tc0
     host: localhost
