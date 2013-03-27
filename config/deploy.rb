@@ -34,7 +34,17 @@ after "deploy:restart", "deploy:cleanup"
 #ssh_options[:forward_agent] = true
  
 namespace :deploy do
- 
+
+take :cold do
+  update
+  load_schema
+  start
+end
+
+task :load_schema, :roles => :app do
+  run "cd #{current_path}; rake db:schema:load"
+end
+
 task :start do
 # Do nothing
 end
