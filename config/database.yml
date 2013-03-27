@@ -20,9 +20,9 @@ test:
 
 production:
   adapter: mysql2
+  encoding: utf8
   database: production
   pool: 5
   username: deployer
   password: t3tc0
-  host: 10.2.2.150
-  port: 3306
+  socket: /var/run/mysqld/mysqld.sock
