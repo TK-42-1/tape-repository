@@ -23,6 +23,6 @@ production:
   encoding: utf8
   database: production
   pool: 5
-  username: deployer
-  password: t3tc0
+  username: root
+  password: teekay
   socket: /var/run/mysqld/mysqld.sock
