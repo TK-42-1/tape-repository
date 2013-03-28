@@ -1,12 +1,13 @@
 <h1>
 	<%= @tape.description %>
 </h1>
-
+<div id="index-btn">
 <%= render 'form' %>
 <% if  @tape.edited.nil? %>
 <%= link_to 'Undo', '#', class: "btn" %>
 <% else %>
-<%= link_to 'Undo', revert_version_path(@tape.versions.last), :method => :post, class: "btn-large btn-danger" %>
+<%= link_to 'Undo', revert_version_path(@tape.versions.last), :method => :post, class: "btn-block btn-danger" %>
 <% end %>
-
+</br>
 <%= image_tag @code %>
+</div>
