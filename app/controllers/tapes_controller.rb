@@ -42,8 +42,6 @@ class TapesController < ApplicationController
       flash.now[:notice] = "Updated tape."
       flash.keep
       redirect_to @tape
-      
-      
     else
       render 'edit'
     end
