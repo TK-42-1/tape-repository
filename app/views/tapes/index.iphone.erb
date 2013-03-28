@@ -1,5 +1,6 @@
-<h3>
-<% @tapes.each do |tape| %>
-	<%= link_to "#{tape.number} #{tape.description}" , tape %><br />
-<% end %>
-</h3>
+<div id="index-list">
+	<% @tapes.each do |tape| %>
+	  <%= link_to "#{tape.number}", tape, class: "label" %> 
+		<%= link_to "#{tape.description}", tape %><br />
+	<% end %><br />
+</div>
