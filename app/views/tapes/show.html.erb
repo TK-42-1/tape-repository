@@ -14,9 +14,11 @@
 <%= link_to 'Edit', edit_tape_path(@tape), class: "btn btn-inverse" %> 
 <%= link_to 'Index', root_path, class: "btn btn-inverse" %>
 <%= link_to 'Print', print_tape_path(@tape), class: "btn btn-warning" %>
-<% if  @tape.edited.nil?%>
+<% if  @tape.edited.nil? %>
 <%= link_to 'Undo', '#', class: "btn" %>
 <% else %>
 <%= link_to 'Undo', revert_version_path(@tape.versions.last), :method => :post, class: "btn btn-danger" %>
 <% end %>
 </div>
+
+<%= @tape.edited %>
