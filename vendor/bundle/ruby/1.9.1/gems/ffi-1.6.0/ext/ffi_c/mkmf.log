@@ -1,0 +1,243 @@
+package configuration for libffi
+cflags: -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include  
+ldflags: -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib
+libs: -lffi  
+
+have_library: checking for ffi_call() in -lffi... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lpthread -ldl -lobjc "
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1 -lffi  -lffi   -lpthread -ldl -lobjc "
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+Undefined symbols:
+  "_ffi_call", referenced from:
+      _t in cc0biQKU.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_call; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1 -lffi  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:7: error: too few arguments to function ‘ffi_call’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { ffi_call(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for ffi_call() in -llibffi... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1 -llibffi  -lffi   -lpthread -ldl -lobjc "
+ld: library not found for -llibffi
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_call; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1 -llibffi  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:7: error: too few arguments to function ‘ffi_call’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { ffi_call(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_raw_call()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ffi_raw_call’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘ffi_raw_call’
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+Undefined symbols:
+  "_ffi_raw_call", referenced from:
+      _t in ccjOOl2M.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ffi_raw_call(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘rb_thread_call_with_gvl’
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { rb_thread_call_with_gvl(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘rb_thread_call_without_gvl’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘rb_thread_call_without_gvl’
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { rb_thread_call_without_gvl(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ffi_prep_cif_var()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ffi_prep_cif_var’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin10.8.0 -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/teekay/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi-3.0.11/include   conftest.c  -L. -L/Users/teekay/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/teekay/.rvm/usr/lib -L.  -L/Library/Frameworks/Mono.framework/Versions/2.10.9/lib     -lffi   -lruby.1.9.1  -lffi   -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘ffi_prep_cif_var’
+ld: warning: in /Library/Frameworks/Mono.framework/Versions/2.10.9/lib/libffi.dylib, file was built for i386 which is not the architecture being linked (x86_64)
+Undefined symbols:
+  "_ffi_prep_cif_var", referenced from:
+      _t in ccIWNQTh.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ffi_prep_cif_var(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_RB_THREAD_BLOCKING_REGION 1
+4: #define HAVE_RB_THREAD_CALL_WITH_GVL 1
+5: #define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
+6: #define USE_INTERNAL_LIBFFI 1
+7: #define RUBY_1_9 1
+8: #endif
+/* end */
+
