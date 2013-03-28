@@ -112,12 +112,11 @@ p {
 
 #head-iphone {
 	text-align: center;
-	font-size: 200%;
+	font-size: 150%;
 	font-weight: bold;
 	text-decoration:none;
 	color:white;
 	padding:0;
-	margin:0 0 20px 20px;
 
 }
 
@@ -187,7 +186,7 @@ input {
 #index-iphone {
 	width: auto;
 	margin-left:5%;
-	font:125%;
+	font-size:150%;
 	a { color:#666; }
 	a:hover { 	
 		text-decoration: none; 
@@ -208,6 +207,10 @@ input {
 #flash-test {
 	position:absolute;
 	top:60px;
+}
+
+#show-iphone {
+	margin:auto;
 }
 
 label {
