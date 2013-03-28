@@ -111,13 +111,13 @@ p {
 }
 
 #head-iphone {
-	text-align: center;
-	font-size: 150%;
+	float:left;
+	font-size: 200%;
 	font-weight: bold;
 	text-decoration:none;
 	color:white;
-	padding:0;
-
+	margin-left:5%;
+	a:visited { color: white; }
 }
 
 #logo {
@@ -186,7 +186,7 @@ input {
 #index-iphone {
 	width: auto;
 	margin-left:5%;
-	font-size:150%;
+	font-size:100%;
 	a { color:#666; }
 	a:hover { 	
 		text-decoration: none; 
@@ -194,10 +194,6 @@ input {
 		color:black;
 		font-weight:bold;
 		}
-	a.label:hover {
-		background: gray;
-		color:white;
-			}
 }
 
 #index-btn {

@@ -13,5 +13,12 @@
 
 	<%= f.input :edited, :as => :hidden, :input_html => {:value => '1' }%>
   <%= f.input :description, label: 'Description' %>
+<div class='btn-group'>
  	<%= f.button :submit, 'Update', class: 'btn-large btn-success'  %>
  <% end %>
+<% if  @tape.edited.nil? %>
+<%= link_to 'Undo', '#', class: "btn" %>
+<% else %>
+<%= link_to 'Undo', revert_version_path(@tape.versions.last), :method => :post, class: "btn-large btn-danger" %>
+<% end %>
+</div>
