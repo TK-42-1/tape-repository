@@ -207,6 +207,10 @@ input {
 
 #show-iphone {
 	margin-left:0 auto;
+	.btn-toolbar {
+	  text-align: center;
+	}​
+	
 }
 
 label {
@@ -217,6 +221,3 @@ label {
 	text-align: center;
 }
 
-.btn-toolbar {
-  text-align: center;
-}​
