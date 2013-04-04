@@ -1,0 +1,20 @@
+<h2>Add Location to Registry</h1>
+<div id="index-btn">
+<%= simple_form_for(@location, :html => { :class => 'form'}) do |f| %>
+  <% if @location.errors.any? %>
+    <div class="alert alert-error">
+      <strong><%= pluralize(@location.errors.count, "error") %> prohibited this location from being saved:</strong>
+      <ul>
+      <% @location.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.input :location, label: 'Location' %>
+	<div class='btn-group'>
+  	<%= f.button :submit, 'Update', class: 'btn-success'  %>
+  	<%= link_to 'Cancel', locations_path, class: "btn btn-danger" %>
+	</div>
+<% end %>
+</div>

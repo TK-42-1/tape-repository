@@ -1,0 +1,12 @@
+<h2><%= @location.location %></h2>
+<div id="index-btn">
+<%= link_to 'Locations', locations_path, class: "btn btn-inverse" %>
+</div>
+<div id="index-list">
+	
+	<br />
+	<% @location.tapes.each do |tape| %>
+	  <%= link_to "#{tape.number}", tape, class: "label" %> 
+		<%= link_to "#{tape.description}", tape %><br />
+	<% end %><br />
+</div>
