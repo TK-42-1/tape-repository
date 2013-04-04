@@ -1,5 +1,7 @@
 <h2>Full Tape Inventory</h2>
-
+<div id="index-btn">
+	<%= link_to 'Locations', locations_path, class: "btn btn-inverse" %>
+</div><br />
 <div id="index-list">
 	<% @tapes.each do |tape| %>
 	  <%= link_to "#{tape.number}", tape, class: "label" %> 

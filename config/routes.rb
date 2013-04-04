@@ -6,7 +6,7 @@ TapeRepository::Application.routes.draw do
       get 'print'
     end
   end
-
+  resources :locations
   
   
 

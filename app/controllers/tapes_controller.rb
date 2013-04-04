@@ -13,6 +13,7 @@ class TapesController < ApplicationController
     @title = "#{@tape.number} #{@tape.description}"
     @code = "https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
     @printcode = "https://chart.googleapis.com/chart?chs=80x80&chld=L|1&cht=qr&chl=http://tapes.tetco.com/tapes/#{@tape.number}"
+    @location = @tape.location.location
   end
   
   def edit

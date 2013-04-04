@@ -1,9 +1,9 @@
 <h1>
-	<%= @tape.description %>
+	<%= @tape.number %> | <%= @tape.description %>
 </h1>
 <h3>
-	Tape Number:
-	<%= @tape.number %>
+	Location: <%= @location %>
+	
 </h3>
 <h3>
 	<%= link_to code, print_tape_path(@tape) %> 
@@ -12,7 +12,8 @@
 <br>
 <div class="btn-group">
 <%= link_to 'Edit', edit_tape_path(@tape), class: "btn btn-inverse" %> 
-<%= link_to 'Index', root_path, class: "btn btn-inverse" %>
+<%= link_to 'Tapes', root_path, class: "btn btn-inverse" %>
+<%= link_to 'Location', location_path(@tape.location_id), class: "btn btn-inverse" %>
 <%= link_to 'Print', print_tape_path(@tape), class: "btn btn-warning" %>
 <% if  @tape.edited.nil? %>
 <%= link_to 'Undo', '#', class: "btn" %>
