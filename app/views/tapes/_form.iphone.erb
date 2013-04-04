@@ -13,7 +13,7 @@
 
 	<%= f.input :edited, :as => :hidden, :input_html => {:value => '1' }%>
   <%= f.input :description, label: 'Description' %>
-<div class='btn-toolbar'>
+<div class='btn-group'>
  	<%= f.button :submit, 'Update', class: 'btn btn-large btn-success'  %>
  <% end %>
 <% if  @tape.edited.nil? %>
