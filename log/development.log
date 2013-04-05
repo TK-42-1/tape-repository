@@ -44342,3 +44342,923 @@ Served asset /tapes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 15:52:01 -0500
 Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (3.9ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 77.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:33 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/new" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Processing by TapesController#new as HTML
+  [1m[35m (2.4ms)[0m  SELECT MAX("tapes"."number") AS max_id FROM "tapes" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT MAX("tapes"."number") AS max_id FROM "tapes" [0m
+  [1m[35mLocation Load (2.5ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered tapes/_newform.html.erb (33.9ms)
+  Rendered tapes/new.html.erb within layouts/application (45.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:35 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (2.6ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:49 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-04 17:28:50 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.1ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (3.6ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (2.7ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 40.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:51 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (2.3ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:54 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.5ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.6ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (2.7ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 31.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:56 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started POST "/versions/3/revert" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Processing by VersionsController#revert as HTML
+  Parameters: {"authenticity_token"=>"sUF/rKdWh1eeZ22Z20LGNuaRztObQC4t8c1ySyFGfjU=", "id"=>"3"}
+  [1m[36mVersion Load (2.5ms)[0m  [1mSELECT "versions".* FROM "versions" WHERE "versions"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mTape Load (3.1ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTape Exists (2.0ms)[0m  SELECT 1 AS one FROM "tapes" WHERE ("tapes"."number" = 1 AND "tapes"."id" != 1) LIMIT 1
+  [1m[36m (7.3ms)[0m  [1mUPDATE "tapes" SET "updated_at" = '2013-04-04 20:51:42.768814', "location_id" = '2' WHERE "tapes"."id" = 1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 04 Apr 2013 22:28:59 UTC +00:00], ["event", "update"], ["item_id", 1], ["item_type", "Tape"], ["object", "---\nnumber: 1\ndescription: Weekly 4-A November 2015\ncreated_at: 2013-04-04 20:49:13.351286000 Z\nupdated_at: 2013-04-04 20:49:13.351286000 Z\nlocation_id: '1'\nid: 1\n"], ["whodunnit", nil]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/tapes/1
+Completed 302 Found in 96ms (ActiveRecord: 32.6ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (3.9ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.4ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 2 LIMIT 1[0m
+  [1m[35mVersion Load (3.1ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 31.8ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:28:59 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started POST "/versions/4/revert" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Processing by VersionsController#revert as HTML
+  Parameters: {"authenticity_token"=>"sUF/rKdWh1eeZ22Z20LGNuaRztObQC4t8c1ySyFGfjU=", "id"=>"4"}
+  [1m[36mVersion Load (2.3ms)[0m  [1mSELECT "versions".* FROM "versions" WHERE "versions"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mTape Load (2.6ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mTape Exists (1.9ms)[0m  SELECT 1 AS one FROM "tapes" WHERE ("tapes"."number" = 1 AND "tapes"."id" != 1) LIMIT 1
+  [1m[36m (6.6ms)[0m  [1mUPDATE "tapes" SET "updated_at" = '2013-04-04 20:49:13.351286', "location_id" = '1' WHERE "tapes"."id" = 1[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "versions" ("created_at", "event", "item_id", "item_type", "object", "whodunnit") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 04 Apr 2013 22:29:01 UTC +00:00], ["event", "update"], ["item_id", 1], ["item_type", "Tape"], ["object", "---\nnumber: 1\ndescription: Weekly 4-A November 2015\ncreated_at: 2013-04-04 20:49:13.351286000 Z\nupdated_at: 2013-04-04 20:51:42.768814000 Z\nlocation_id: '2'\nid: 1\n"], ["whodunnit", nil]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/tapes/1
+Completed 302 Found in 51ms (ActiveRecord: 30.9ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.3ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.5ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (2.4ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 33.0ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:01 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1/print" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Processing by TapesController#print as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTape Load (2.2ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered tapes/print.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:03 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.8ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.4ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (2.6ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 34.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:05 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (2.5ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:06 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:07 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (3.3ms)[0m  SELECT "locations".* FROM "locations" 
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3[0m
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4
+  Rendered locations/index.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 56.2ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:09 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (3.0ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTape Load (1.7ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."location_id" = 2
+  Rendered locations/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 38.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:11 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (2.3ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4[0m
+  Rendered locations/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 37.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:12 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (3.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTape Load (2.6ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  Rendered locations/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 31.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-04 17:29:14 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-05 12:04:08 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (4.0ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 737ms (Views: 717.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /jquery.js - 304 Not Modified (69ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /locations.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /custom.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /versions.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /tapes.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /locations.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /tapes.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:10 -0500
+Served asset /versions.js - 304 Not Modified (4ms)
+
+
+Started GET "/tapes/new" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Processing by TapesController#new as HTML
+  [1m[35m (4.0ms)[0m  SELECT MAX("tapes"."number") AS max_id FROM "tapes" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT MAX("tapes"."number") AS max_id FROM "tapes" [0m
+  [1m[35mLocation Load (3.3ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered tapes/_newform.html.erb (228.6ms)
+  Rendered tapes/new.html.erb within layouts/application (243.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 305ms (Views: 292.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-05 12:04:11 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-05 12:10:50 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (3.5ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 533ms (Views: 513.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /versions.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /jquery.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /tapes.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /custom.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /locations.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /locations.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:51 -0500
+Served asset /tapes.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:52 -0500
+Served asset /versions.js - 304 Not Modified (4ms)
+
+
+Started GET "/tapes/new" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Processing by TapesController#new as HTML
+  [1m[35m (3.4ms)[0m  SELECT MAX("tapes"."number") AS max_id FROM "tapes" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT MAX("tapes"."number") AS max_id FROM "tapes" [0m
+  [1m[35mLocation Load (3.6ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered tapes/_newform.html.erb (203.5ms)
+  Rendered tapes/new.html.erb within layouts/application (220.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 263ms (Views: 252.2ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-05 12:10:53 -0500
+Served asset /versions.js - 304 Not Modified (0ms)

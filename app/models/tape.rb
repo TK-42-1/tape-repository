@@ -3,7 +3,9 @@ class Tape < ActiveRecord::Base
   belongs_to :location
   has_paper_trail :skip => [:edited]
     
-  validates :number, :description, :location_id, :presence => true
-  validates :number, :uniqueness => true
+  validates :number, :uniqueness => true, :presence => true
+  validates :description, :presence => true
+  
+   
 
 end
