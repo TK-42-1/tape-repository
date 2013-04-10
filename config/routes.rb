@@ -5,6 +5,9 @@ TapeRepository::Application.routes.draw do
     member do
       get 'print'
     end
+    collection do
+      post :search
+    end
   end
   resources :locations
   

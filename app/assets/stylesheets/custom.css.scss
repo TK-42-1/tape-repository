@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 35px;
 }
 
 section {
@@ -26,24 +26,28 @@ textarea {
   margin-bottom: 10px;
 }
 
-#nav-menu {
-	position:relative;
-	bottom:-5px;
+.navbar .container {
+	width: auto;
+	margin: 0% 2% 0% 5%;
 }
 
-#navbar {
-	text-align: center;
-	a {
-		color:white;
-		&:hover {
-			color: #FFF;
-			text-decoration:none;
-		}
+.navbar .brand { 
+	color: white;
+	font-weight: bold;	
 	}
 	
-}
+.navbar .nav { 
+	color:white;
+	}
 
-
+.navbar .nav > li > a {	
+	color:white;
+	&:hover {
+		color: #FFF;
+		text-decoration:none;
+		font-weight: bold;
+		}
+	}
 
 #delete {
 	float:center;
@@ -82,6 +86,13 @@ h3 {
 	font-size:1.3em;
 	text-align: center;
 	color: gray;
+	a { color: gray;
+		text-decoration:none;
+		&:visted { 	color:gray; }
+		&:hover { 	text-decoration:none;
+					background:none;
+					color: black;}
+	}
 }
 
 h6 {
@@ -95,56 +106,10 @@ p {
   line-height: 1.7em;
 }
 
-
-/* header */
-
-#head-title {
-	float:left;
-	text-align: left;
-	font-size: 150%;
-	font-weight: bold;
-	text-decoration:none;
-	color:white;
-	padding:0;
-	margin:0 0 20px 0;
-
-}
-
-#head-iphone {
-	float:left;
-	font-size: 160%;
-	font-weight: bold;
-	text-decoration:none;
-	color:white;
-	padding-top: 10px;
-	a:visited { color: white; }
-}
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
 a.btn-inverse:visited { color: #fff; }
 a.btn:visited { color: #fff; }
 
 /* forms */
-
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 85%;
-  padding: 10px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-	
-}
 
 input {
   height: auto !important;
@@ -205,7 +170,7 @@ input {
 	top:60px;
 }
 
-iphone-show {
+.iphone-show {
 	margin-left:auto;
 	text-align: center;	
 }
@@ -221,4 +186,3 @@ label {
 #head-iphone {
 	text-align: center;
 }
-

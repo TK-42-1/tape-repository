@@ -1,11 +1,16 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
-			<%= link_to logo, root_path, id: "logo" %>
-				<div class="btn-toolbar">
-					<%= link_to "Tapes", root_path, class: "btn btn-inverse" %>
-					<%= link_to "Locations", locations_path, class: "btn btn-inverse" %>
-				</div>
+				<%= link_to "Tape Repository", root_path, class: "brand pull-left" %>
+				<ul class="nav">
+					<li><%= link_to "Tapes", root_path %></li>
+					<li><%= link_to "Locations", locations_path %></li>
+				</ul>
+					<%= form_tag search_tapes_url, class: "navbar-form pull-right" do %>
+					<%= text_field_tag :search, nil, class: "input-mini" %>
+					<%= submit_tag "Tape", name: nil, class: "btn" %>
+				<% end %>	
+			</div>	
 		</div>
 	</div>
 </header>

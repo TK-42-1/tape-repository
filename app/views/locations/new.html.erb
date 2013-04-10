@@ -1,6 +1,6 @@
 <h2>Add Location to Registry</h1>
 <div id="index-btn">
-<%= simple_form_for(@location, :html => { :class => 'form'}) do |f| %>
+<%= simple_form_for(@location, :html => { :class => 'form input-large'}) do |f| %>
   <% if @location.errors.any? %>
     <div class="alert alert-error">
       <strong><%= pluralize(@location.errors.count, "error") %> prohibited this location from being saved:</strong>

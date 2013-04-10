@@ -2,7 +2,7 @@
 	<%= @tape.number %> | <%= @tape.description %>
 </h1>
 <h3>
-	Location: <%= @location %>
+	Location: <%= link_to @location, location_path(@tape.location_id) %>
 	
 </h3>
 <h3>

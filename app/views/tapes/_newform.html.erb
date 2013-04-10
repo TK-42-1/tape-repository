@@ -1,5 +1,5 @@
 <div id="index-btn">
-<%= simple_form_for(@tape, :html => { :class => 'form'}) do |f| %>
+<%= simple_form_for(@tape, :html => { :class => 'form input-large'}) do |f| %>
   <% if @tape.errors.any? %>
     <div class="alert alert-error">
       <strong><%= pluralize(@tape.errors.count, "error") %> prohibited this tape from being saved:</strong>
@@ -10,10 +10,11 @@
       </ul>
     </div>
   <% end %>
-	<h4>Creating tape <%= next_num %></h4>
+	<h4>Creating Tape: <%= next_num %></h4>
   <%= f.input :number, :as => :hidden, :input_html => {:value => next_num } %>
-	<%= f.association :location, :selected => 1, :label_method => :location, 
-				:value_method => :id,  label: "Location" %>
+	<%= f.association :location, include_blank: false , :label_method => :location, 
+					:value_method => :id, label: "Location" %>
+	
   <%= f.input :description, label: 'Description' %>
 	<div class='btn-group'>
   	<%= f.button :submit, class: 'btn-success'  %>
