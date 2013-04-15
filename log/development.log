@@ -82359,3 +82359,2276 @@ Served asset /tapes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-10 17:12:18 -0500
 Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/new" for 10.1.0.48 at 2013-04-12 08:33:52 -0500
+Processing by TapesController#new as HTML
+  [1m[36m (13.0ms)[0m  [1mSELECT MAX("tapes"."number") AS max_id FROM "tapes" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT MAX("tapes"."number") AS max_id FROM "tapes" 
+  [1m[36mLocation Load (3.0ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered tapes/_newform.html.erb (458.7ms)
+  Rendered tapes/new.html.erb within layouts/application (549.8ms)
+  Rendered layouts/_header.html.erb (13.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1416ms (Views: 1237.4ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 10.1.0.48 at 2013-04-12 08:33:53 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (12.5ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 265ms (Views: 245.5ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /custom.css - 200 OK (22ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:54 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-12 08:33:55 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:35:04 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (13.7ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (39.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 118.7ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:35:05 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (3.6ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 120.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /custom.css - 200 OK (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:17 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:18 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (2.9ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  [1m[35m (3.1ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1
+  [1m[36m (3.0ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2[0m
+  [1m[35m (2.9ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4[0m
+  Rendered locations/index.html.erb within layouts/application (53.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 105.8ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:27 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-12 08:39:28 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (2.3ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /custom.css - 200 OK (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-12 08:41:19 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (2.0ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (14.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 123.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /custom.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:06 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:07 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (9.3ms)[0m  SELECT "locations".* FROM "locations" 
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3[0m
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4
+  Rendered locations/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 79ms (Views: 57.1ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:50 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:42:51 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:43:12 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (2.7ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:12 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:13 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (30.1ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 111.1ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:26 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:27 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (2.9ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2[0m
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4[0m
+  Rendered locations/index.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 58.9ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:29 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2013-04-12 08:43:32 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (2.7ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTape Load (2.6ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  Rendered locations/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 57.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:33 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.6ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (3.4ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 93.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:39 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:40 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:43:40 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTape Load (2.5ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLocation Load (3.0ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1
+  [1m[36mVersion Load (2.9ms)[0m  [1mSELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1[0m
+  Rendered tapes/show.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (34.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 87.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:05 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1/edit" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Processing by TapesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.8ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered tapes/_form.html.erb (14.6ms)
+  Rendered tapes/edit.html.erb within layouts/application (30.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 80.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:15 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTape Load (2.7ms)[0m  SELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLocation Load (2.7ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1[0m
+  [1m[35mVersion Load (3.0ms)[0m  SELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1
+  Rendered tapes/show.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 41.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:19 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:20 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:20 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (2.8ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  [1m[35m (2.8ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2[0m
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3
+  [1m[36m (3.0ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4[0m
+  Rendered locations/index.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 45.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:24 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (2.6ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTape Load (2.5ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  Rendered locations/show.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 161ms (Views: 153.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:29 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (3.4ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 48.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-12 08:44:40 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.0.48 at 2013-04-15 08:15:21 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (26.7ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 370ms (Views: 339.9ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:23 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-15 08:15:24 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (3.5ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+  Rendered tapes/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:14 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:15 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/tapes/1" for 10.1.0.48 at 2013-04-15 09:34:16 -0500
+Processing by TapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTape Load (1.9ms)[0m  [1mSELECT "tapes".* FROM "tapes" WHERE "tapes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mLocation Load (1.8ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."id" = 1 LIMIT 1
+  [1m[36mVersion Load (2.2ms)[0m  [1mSELECT "versions".* FROM "versions" WHERE "versions"."item_id" = 1 AND "versions"."item_type" = 'Tape' ORDER BY created_at DESC, id DESC LIMIT 1[0m
+  Rendered tapes/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 56.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:17 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (2.7ms)[0m  SELECT "locations".* FROM "locations" 
+  [1m[36m (3.4ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 1[0m
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 2
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 3[0m
+  [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM "tapes" WHERE "tapes"."location_id" = 4
+  Rendered locations/index.html.erb within layouts/application (121.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 189ms (Views: 173.1ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:25 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:26 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
