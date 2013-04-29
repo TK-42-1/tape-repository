@@ -1,7 +1,7 @@
-<div id="index-iphone">
-	<div class="iphone-button">
-		<%= link_to 'Locations', locations_path, class: "btn btn-primary btn-large btn-block" %>
-	</div>	
+<div class="iphone-button">
+	<%= link_to 'Locations', locations_path, class: "btn btn-primary btn-large btn-block" %>
+</div>
+<div id="index-iphone">	
 	<% @tapes.each do |tape| %>
 	  <%= link_to "#{tape.number}", tape, class: "label" %> 
 		<%= link_to "#{tape.description}", tape %><br />
