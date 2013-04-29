@@ -1,12 +1,12 @@
 <div id="index-iphone">
-	<div class="btn-group">
-		<%= link_to 'Locations', locations_path, class: "btn btn-inverse" %>
+	<div class="iphone-button">
+		<%= link_to 'Locations', locations_path, class: "btn btn-primary btn-large btn-block" %>
 	</div>	
 	<% @tapes.each do |tape| %>
 	  <%= link_to "#{tape.number}", tape, class: "label" %> 
 		<%= link_to "#{tape.description}", tape %><br />
 	<% end %><br />
 </div>
-<div class="btn-group">
-	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning" %>
+<div class="iphone-button">
+	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning btn-block" %>
 </div>
