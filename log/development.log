@@ -84632,3 +84632,301 @@ Served asset /tapes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-15 09:34:26 -0500
 Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:50:46 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (79.2ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number
+Completed 500 Internal Server Error in 99ms
+
+ActiveRecord::StatementInvalid (SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (63.1ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.1ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (160.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:50:55 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (0.3ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (50.8ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.5ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (19.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (21.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddEditedFlagToTapes (20130328162400)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (6.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (20.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "location" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (21.1ms)[0m  [1mCREATE TABLE "tapes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "edited" integer, "location_id" varchar(255)) [0m
+  [1m[35m (20.9ms)[0m  CREATE TABLE "versions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar(255) NOT NULL, "item_id" integer NOT NULL, "event" varchar(255) NOT NULL, "whodunnit" varchar(255), "object" text, "created_at" datetime) 
+  [1m[36m (20.2ms)[0m  [1mCREATE INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  [1m[35m (3.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (25.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130404193414')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130404185458')
+  [1m[36m (25.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130328162400')[0m
+  [1m[35m (24.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130404185401')
+  [1m[36m (24.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130404184153')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:52:59 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (0.5ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (129.3ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.9ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (160.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:53:01 -0500
+Processing by TapesController#index as HTML
+  [1m[35mTape Load (0.3ms)[0m  SELECT "tapes".* FROM "tapes" ORDER BY number
+SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::StatementInvalid (SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (43.2ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (69.8ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (140.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:53:09 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (21.8ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::StatementInvalid (SQLite3::IOException: disk I/O error: SELECT "tapes".* FROM "tapes"  ORDER BY number):
+  app/controllers/tapes_controller.rb:3:in `index'
+
+
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (74.5ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.2ms)
+  Rendered /Users/teekay/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (114.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 10:53:35 -0500
+Processing by TapesController#index as HTML
+  [1m[36mTape Load (3.2ms)[0m  [1mSELECT "tapes".* FROM "tapes" ORDER BY number[0m
+  Rendered tapes/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 651ms (Views: 641.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 127.0.0.1 at 2013-04-15 10:53:36 -0500
+Served asset /tapes.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/versions.css?body=1" for 127.0.0.1 at 2013-04-15 10:53:36 -0500
+Served asset /versions.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2013-04-15 10:53:36 -0500
+Served asset /locations.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-15 10:53:36 -0500
+Served asset /custom.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:36 -0500
+Served asset /jquery.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /bootstrap.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /locations.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /tapes.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/versions.js?body=1" for 127.0.0.1 at 2013-04-15 10:53:37 -0500
+Served asset /versions.js - 304 Not Modified (5ms)
+
+
+Started GET "/locations" for 10.1.0.48 at 2013-04-29 08:35:28 -0500
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (3.6ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.erb within layouts/application (145.7ms)
+  Rendered layouts/_header.html.erb (30.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 876ms (Views: 607.5ms | ActiveRecord: 102.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/versions.css?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /versions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.css?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /tapes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:31 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/versions.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /versions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tapes.js?body=1" for 10.1.0.48 at 2013-04-29 08:35:32 -0500
+Served asset /tapes.js - 304 Not Modified (0ms)
