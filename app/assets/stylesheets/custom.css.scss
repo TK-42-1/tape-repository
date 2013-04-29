@@ -176,7 +176,7 @@ input {
 }
 
 .iphone-show {
-	margin-left:auto;
+	margin-left:auto !important;
 	text-align: center;	
 }
 
@@ -202,4 +202,9 @@ label {
 
 #head-iphone {
 	text-align: center;
+}
+
+.table { float: right;
+	a { color: black; }
+	a:visited { color: black; }
 }
