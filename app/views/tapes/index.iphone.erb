@@ -2,14 +2,15 @@
 	<%= link_to 'Locations', locations_path, class: "btn btn-primary btn-large btn-block" %>
 </div>
 <br />
-<table>
-<div class="table index-iphone">	
+<table class="table">
+<div class="iphone-index">	
 	<% @tapes.each do |tape| %>
 	  <tr>
 			<td><%= link_to "#{tape.number}", tape, class: "phone" %></td>
 			<td><%= link_to "#{tape.description}", tape %></td> 
 		</tr>
-	<% end %><br />
+	<% end %>
+</table><br />
 </div>
 <div class="iphone-button">
 	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning btn-block" %>
