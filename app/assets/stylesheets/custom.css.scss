@@ -149,10 +149,10 @@ input {
 }
 
 #index-iphone {
-	padding-top: 15px;
+	padding-top: 30px;
 	width: auto;
 	margin-left:5%;
-	font-size:150%;
+	font-size:130%;
 	a { color:#666; }
 	a:hover { 	
 		text-decoration: none; 
@@ -164,6 +164,11 @@ input {
 
 #index-btn {
 	margin-left:5%;
+	color:black;
+}
+
+.form {
+	label {	color: black; }
 }
 
 #flash-test {
@@ -185,6 +190,11 @@ input {
 	margin-left: 15%;
 	margin-right: 15%;
 }​
+
+.iphone-form {
+	text-align: center;
+	font-size:130%;
+}
 
 label {
 	color:white;

@@ -12,7 +12,7 @@
   <% end %>
 	<%= f.input :edited, :as => :hidden, :input_html => {:value => '1' }%>
   <%= f.input :description, label: 'Description' %>
-	<%= f.association :location, :selected => 1, :label_method => :location, 
+	<%= f.association :location, :selected => @tape.location_id, :label_method => :location, 
 			:value_method => :id,  label: "Location" %>
 	<div class='btn-group'>
   	<%= f.button :submit, 'Update', class: 'btn-primary'  %>
