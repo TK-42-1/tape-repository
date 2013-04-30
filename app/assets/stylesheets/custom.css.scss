@@ -106,14 +106,12 @@ p {
   line-height: 1.7em;
 }
 
+/* button fix */
+
 a.btn-inverse:visited { color: #fff; }
 a.btn:visited { color: #fff; }
 
-/* forms */
 
-input {
-  height: auto !important;
-}
 
 /* printing */
 
@@ -132,6 +130,71 @@ input {
 		}	
 }
 
+.print-label {
+	position: absolute;
+}
+
+/* iphone */
+
+.index-iphone {
+	width: auto;
+	margin-left:5%;
+	font-size:130%;
+	a { color:#666; }
+	a:hover { 	
+		text-decoration: none; 
+		background: transparent;
+		color:black;
+		font-weight:bold;
+		}
+}
+
+.iphone-show {
+	margin-left:auto !important;
+	text-align: center;	
+}
+
+.iphone-list {
+	font-size: 150%;
+	margin-left: 10%;
+	font-weight: bold;
+	a { color: black; }
+	a:visited{ color:black; }
+}
+
+.iphone-count {
+	font-size:80%;
+	font-weight:normal;
+	margin-right: 10%;
+}
+
+.iphone-button {
+	padding-top: 20px;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}​
+
+.iphone-form {
+	text-align: center;
+	font-size:130%;
+}
+
+/* misc */
+
+.btn-group {
+  text-align: center;
+}
+
+.form {
+	label {	color: black; }
+}
+
+#flash-test {
+	position:absolute;
+	top:60px;
+}
+
 #index-list {
 	width: auto;
 	margin-left:5%;
@@ -148,63 +211,12 @@ input {
 			}
 }
 
-.index-iphone {
-	width: auto;
-	margin-left:5%;
-	font-size:130%;
-	a { color:#666; }
-	a:hover { 	
-		text-decoration: none; 
-		background: transparent;
-		color:black;
-		font-weight:bold;
-		}
-}
-
 #index-btn {
 	margin-left:5%;
 	color:black;
 }
 
-.form {
-	label {	color: black; }
-}
 
-#flash-test {
-	position:absolute;
-	top:60px;
-}
 
-.iphone-show {
-	margin-left:auto !important;
-	text-align: center;	
-}
 
-.btn-group {
-  text-align: center;
-}
 
-.iphone-button {
-	padding-top: 10px;
-	text-align: center;
-	margin-left: 15%;
-	margin-right: 15%;
-}​
-
-.iphone-form {
-	text-align: center;
-	font-size:130%;
-}
-
-label {
-	color:white;
-}
-
-#head-iphone {
-	text-align: center;
-}
-
-.table { font-size: 130%;
-	a { color: black; }
-	a:visited { color: black; }
-}

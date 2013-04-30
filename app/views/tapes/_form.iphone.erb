@@ -13,9 +13,9 @@
 
 <div class="iphone-form">
 	<%= f.input :edited, :as => :hidden, :input_html => {:value => '1' }%>
-	<%= f.input :description, label: 'Description' %>
+	<%= f.input :description, label: 'DESCRIPTION' %>
 	<%= f.association :location, :selected => @tape.location_id, :label_method => :location, 
-			:value_method => :id,  label: "Location" %>
+			:value_method => :id,  label: "LOCATION" %>
 </div>
 <div class='btn-group'>
  	<%= f.button :submit, 'Update', class: 'btn btn-large btn-success'  %>

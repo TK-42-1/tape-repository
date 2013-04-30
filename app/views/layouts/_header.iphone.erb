@@ -2,8 +2,12 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<div id="head-iphone" >
-				<%= link_to "TETCO TAPE REPOSITORY", root_path, class: "brand" %>				
-			</div>
+				<%= link_to "TAPE", root_path, class: "nav" %>
+				<%= link_to "LOCATION", locations_path, class: "nav" %>			</div>
+					<%= form_tag search_tapes_url, class: "navbar-form pull-right" do %>
+					<%= text_field_tag :search, nil, class: "input-mini" %>
+				<% end %>
+
 		</div>
 	</div>
 </header>

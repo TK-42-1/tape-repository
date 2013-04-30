@@ -1,0 +1,9 @@
+<div class="iphone-button">
+	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning btn-block" %>
+<br />
+</div>
+<div class='iphone-list'>
+<% @locations.each do |location| %>
+  <%= link_to "#{location.location}", location %> <count class="iphone-count pull-right"> Tapes: <%= link_to "#{location.tapes.count}", location %></count>  <br />
+<% end %><br />
+</div>

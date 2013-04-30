@@ -1,0 +1,7 @@
+<h2><%= @location.location %></h2>
+
+<div class="iphone-list">
+	<% @location.tapes.each do |tape| %>
+	  <%= tape.number %> |	<%= link_to "#{tape.description}", tape %><br />
+	<% end %><br />
+</div>

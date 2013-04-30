@@ -1,16 +1,12 @@
 <div class="iphone-button">
-	<%= link_to 'Locations', locations_path, class: "btn btn-primary btn-large btn-block" %>
-</div>
+	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning btn-block" %>
 <br />
-<table class="table">
-<div class="iphone-index">	
+</div>
+
+<div class="iphone-list">	
 	<% @tapes.each do |tape| %>
-	  <tr>
-			<td><%= link_to "#{tape.number}", tape, class: "phone" %></td>
-			<td><%= link_to "#{tape.description}", tape %></td> 
-		</tr>
+	  <%= link_to "#{tape.number} | #{tape.description}", tape %><br />
 	<% end %>
-</table><br />
 </div>
 <div class="iphone-button">
 	<%= link_to 'Scan', "qr://", class: "btn btn-large btn-warning btn-block" %>
