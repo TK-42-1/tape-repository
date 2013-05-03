@@ -15,3 +15,9 @@
 //= require bootstrap
 //= require bootstrap-dropdown
 //= require_tree .
+
+function moveLabel(pos)
+{
+	var label = document.getElementById("label");
+	label.style.top=pos;
+}
